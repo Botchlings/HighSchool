@@ -1,5 +1,3 @@
-﻿// Lotto_Program
-
 #include <iostream>
 #include <time.h>
 

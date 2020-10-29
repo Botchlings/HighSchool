@@ -33,8 +33,8 @@ int main()
 	tStudent.iKor = 100;
 
 	//  문자열을 배열에 넣어줄 때에는 단순 대입으로는 불가능하다.
-	// strcpy_s 라는 함수를 이용해서 문자열을 복사해 주어야 한다.
-	// strcpy_s(tStudent.strName, "김수민");
+	// strcpy 라는 함수를 이용해서 문자열을 복사해 주어야 한다.
+	// strcpy(tStudent.strName, "김수민");
 	tStudent.strName[0] = 'K';
 	tStudent.strName[1] = 'i';
 	tStudent.strName[2] = 'm';
@@ -44,7 +44,7 @@ int main()
 	// 가급적 문자열을 쓸때는 0으로 초기화 해두고 쓰도록하자.
 	tStudent.strName[3] = 0;
 
-	// strcat_s 함수는 문자열을 붙여주는 기능이다.
+	// strcat 함수는 문자열을 붙여주는 기능이다.
 	strcat(tStudent.strName, " 문자열 붙이기");
 
 	// strcmp 함수는 두 문자열을 비교하여 같을경우 0을 반환하고 다를 경우 0이 아닌 값을 반환한다.

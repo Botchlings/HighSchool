@@ -85,6 +85,8 @@ int main()
 			cout << "이름 : ";
 			cin >> tStudentArr[iStudentCount].strName;
 
+			// cin으로 입력을 하면 스페이스바도 문자열의 끝으로 인식한기 때문에 getline을 사용한다.
+			// cin과 getline을 같이 사용하면 입력버퍼에 엔터가 들어가 있어서 그냥 진행되는 경우가 있음 
 			cin.ignore(1024, '\n');
 			cout << "주소 : ";
 			cin.getline(tStudentArr[iStudentCount].strAddress, ADDRESS_SIZE);
